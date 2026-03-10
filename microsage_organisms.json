@@ -1,0 +1,1528 @@
+{
+  "organisms": [
+    {
+      "id": 1,
+      "name": "Streptococcus pneumoniae",
+      "gram": "Gram Positive",
+      "shape": "Cocci",
+      "arrangement": "Pairs / Diplococci",
+      "oxygen": "Facultative Anaerobe",
+      "spore": false,
+      "capsule": true,
+      "hemolysis": "Alpha",
+      "motility": false,
+      "sites": ["Respiratory", "CNS", "Bloodstream"],
+      "symptoms": ["Fever", "Productive cough", "Chest pain", "Shortness of breath", "Neck stiffness", "Headache", "Photophobia"],
+      "age_weights": {
+        "Neonate": -2,
+        "Child": 2,
+        "Adult": 4,
+        "Elderly": 4,
+        "Immunocompromised": 3
+      },
+      "site_weights": {
+        "Respiratory": 4,
+        "CNS": 3,
+        "Bloodstream": 2
+      },
+      "symptom_weights": {
+        "Fever": 1,
+        "Productive cough": 2,
+        "Chest pain": 2,
+        "Shortness of breath": 1,
+        "Neck stiffness": 2,
+        "Headache": 1,
+        "Photophobia": 1
+      },
+      "culture_media": {
+        "primary": "Blood agar — alpha hemolysis produces characteristic green zone around colonies",
+        "secondary": "Chocolate agar — supports growth of fastidious invasive strains"
+      },
+      "confirmatory_tests": [
+        "Optochin sensitivity test (zone of inhibition >14mm)",
+        "Bile solubility test (colonies dissolve in bile salts)",
+        "Quellung reaction (capsular swelling with specific antisera)"
+      ],
+      "antibiotics": {
+        "first_line": "Penicillin / Amoxicillin",
+        "second_line": "Ceftriaxone / Levofloxacin",
+        "resistance_warning": "Penicillin resistant S. pneumoniae (PRSP) increasing globally — MIC testing recommended before treatment"
+      },
+      "teach_me": "Streptococcus pneumoniae ranked highly because you selected Gram positive cocci in pairs from a [site] infection in a [age_group] patient presenting with [symptoms]. This matches the classic pneumococcal profile — the most common cause of community acquired pneumonia and bacterial meningitis in adults. Its polysaccharide capsule is its primary weapon against host phagocytosis, making it particularly dangerous in asplenic patients.",
+      "clinical_pearl": "The only organism that is both optochin sensitive AND bile soluble — two tests, one definitive answer.",
+      "gram_appearance": "Gram positive lancet shaped cocci in pairs (diplococci) — often described as flame shaped under microscopy."
+    },
+    {
+      "id": 2,
+      "name": "Escherichia coli",
+      "gram": "Gram Negative",
+      "shape": "Bacilli",
+      "arrangement": "Single",
+      "oxygen": "Facultative Anaerobe",
+      "spore": false,
+      "capsule": false,
+      "hemolysis": "Gamma",
+      "motility": true,
+      "sites": ["Urinary", "Gastrointestinal", "CNS", "Bloodstream"],
+      "symptoms": ["Fever", "Burning urination", "Frequent urination", "Flank pain", "Diarrhea", "Bloody diarrhea", "Abdominal cramps", "Neck stiffness"],
+      "age_weights": {
+        "Neonate": 3,
+        "Child": 2,
+        "Adult": 3,
+        "Elderly": 3,
+        "Immunocompromised": 2
+      },
+      "site_weights": {
+        "Urinary": 4,
+        "Gastrointestinal": 3,
+        "CNS": 2,
+        "Bloodstream": 3
+      },
+      "symptom_weights": {
+        "Fever": 1,
+        "Burning urination": 2,
+        "Frequent urination": 2,
+        "Flank pain": 2,
+        "Diarrhea": 2,
+        "Bloody diarrhea": 2,
+        "Abdominal cramps": 1,
+        "Neck stiffness": 1
+      },
+      "culture_media": {
+        "primary": "MacConkey agar — lactose fermenter producing pink colonies",
+        "secondary": "Blood agar — grey white colonies, some strains show beta hemolysis (UPEC)"
+      },
+      "confirmatory_tests": [
+        "IMViC pattern: Indole positive, Methyl red positive, Voges Proskauer negative, Citrate negative",
+        "Lactose fermentation positive on MacConkey",
+        "Urease negative (differentiates from Proteus)"
+      ],
+      "antibiotics": {
+        "first_line": "Trimethoprim-Sulfamethoxazole / Nitrofurantoin (UTI) / Ceftriaxone (systemic)",
+        "second_line": "Ciprofloxacin / Amoxicillin-Clavulanate",
+        "resistance_warning": "ESBL producing E. coli increasingly common — carbapenem may be required. Always consult local antibiogram."
+      },
+      "teach_me": "Escherichia coli ranked highly because you selected Gram negative bacilli from a [site] infection in a [age_group] patient with [symptoms]. E. coli is the most common cause of urinary tract infections globally and a major cause of neonatal meningitis. In the GI tract, different pathotypes (ETEC, EPEC, EHEC) produce distinct disease patterns.",
+      "clinical_pearl": "The most common cause of UTI globally — responsible for over 80% of uncomplicated urinary tract infections in otherwise healthy women.",
+      "gram_appearance": "Gram negative straight rods appearing singly or in pairs — medium sized bacilli with no distinctive morphological features."
+    },
+    {
+      "id": 3,
+      "name": "Klebsiella pneumoniae",
+      "gram": "Gram Negative",
+      "shape": "Bacilli",
+      "arrangement": "Single",
+      "oxygen": "Facultative Anaerobe",
+      "spore": false,
+      "capsule": true,
+      "hemolysis": "Gamma",
+      "motility": false,
+      "sites": ["Respiratory", "Urinary", "Bloodstream"],
+      "symptoms": ["Fever", "Productive cough", "Bloody cough", "Chest pain", "Burning urination", "Chills and rigors"],
+      "age_weights": {
+        "Neonate": 1,
+        "Child": 1,
+        "Adult": 3,
+        "Elderly": 4,
+        "Immunocompromised": 4
+      },
+      "site_weights": {
+        "Respiratory": 4,
+        "Urinary": 3,
+        "Bloodstream": 3
+      },
+      "symptom_weights": {
+        "Fever": 1,
+        "Productive cough": 2,
+        "Bloody cough": 3,
+        "Chest pain": 2,
+        "Burning urination": 2,
+        "Chills and rigors": 2
+      },
+      "culture_media": {
+        "primary": "MacConkey agar — mucoid lactose fermenting colonies (very characteristic)",
+        "secondary": "Blood agar — large mucoid colonies due to thick polysaccharide capsule"
+      },
+      "confirmatory_tests": [
+        "String test positive (hypermucoviscosity — colony stretches >5mm with loop)",
+        "Citrate positive",
+        "Urease positive",
+        "Indole negative (differentiates from E. coli)"
+      ],
+      "antibiotics": {
+        "first_line": "Ceftriaxone / Cefazolin (susceptible strains)",
+        "second_line": "Meropenem / Imipenem (ESBL or KPC strains)",
+        "resistance_warning": "Carbapenem resistant Klebsiella pneumoniae (CRKP) is a critical WHO priority pathogen — limited treatment options available."
+      },
+      "teach_me": "Klebsiella pneumoniae ranked highly because you selected Gram negative encapsulated bacilli from a [site] infection in a [age_group] patient with [symptoms]. Klebsiella classically causes a severe lobar pneumonia with currant jelly sputum in alcoholic or diabetic patients. Its thick capsule makes it particularly resistant to phagocytosis.",
+      "clinical_pearl": "Classic presentation: alcoholic or diabetic patient with thick bloody mucoid sputum described as currant jelly — think Klebsiella immediately.",
+      "gram_appearance": "Gram negative plump rods appearing singly or in pairs — often surrounded by a visible clear halo representing the large polysaccharide capsule."
+    },
+    {
+      "id": 4,
+      "name": "Proteus mirabilis",
+      "gram": "Gram Negative",
+      "shape": "Bacilli",
+      "arrangement": "Single",
+      "oxygen": "Facultative Anaerobe",
+      "spore": false,
+      "capsule": false,
+      "hemolysis": "Gamma",
+      "motility": true,
+      "sites": ["Urinary", "Skin"],
+      "symptoms": ["Fever", "Burning urination", "Frequent urination", "Flank pain", "Cloudy urine", "Pus / Wound discharge"],
+      "age_weights": {
+        "Neonate": 1,
+        "Child": 1,
+        "Adult": 3,
+        "Elderly": 4,
+        "Immunocompromised": 2
+      },
+      "site_weights": {
+        "Urinary": 4,
+        "Skin": 2
+      },
+      "symptom_weights": {
+        "Fever": 1,
+        "Burning urination": 2,
+        "Frequent urination": 2,
+        "Flank pain": 2,
+        "Cloudy urine": 2,
+        "Pus / Wound discharge": 1
+      },
+      "culture_media": {
+        "primary": "Blood agar — swarming motility produces characteristic concentric ring pattern",
+        "secondary": "MacConkey agar — non-lactose fermenter producing pale colonies"
+      },
+      "confirmatory_tests": [
+        "Urease strongly positive (rapid urea hydrolysis)",
+        "H2S production on TSI slant",
+        "Swarming motility on blood agar",
+        "Phenylalanine deaminase positive"
+      ],
+      "antibiotics": {
+        "first_line": "Trimethoprim-Sulfamethoxazole / Ampicillin (susceptible strains)",
+        "second_line": "Ciprofloxacin / Ceftriaxone",
+        "resistance_warning": "Intrinsically resistant to nitrofurantoin and tetracycline — do not use these for Proteus UTI."
+      },
+      "teach_me": "Proteus mirabilis ranked highly because you selected Gram negative bacilli from a [site] infection in a [age_group] patient with [symptoms]. Proteus is notorious for causing catheter associated UTIs and producing urease that splits urea into ammonia — raising urinary pH and promoting struvite kidney stone formation.",
+      "clinical_pearl": "Proteus UTI smells distinctively of ammonia and produces alkaline urine — if the urine pH is above 7 in a UTI think Proteus first.",
+      "gram_appearance": "Gram negative straight rods appearing singly — morphologically similar to other Enterobacteriaceae, identified by characteristic swarming on agar."
+    },
+    {
+      "id": 5,
+      "name": "Pseudomonas aeruginosa",
+      "gram": "Gram Negative",
+      "shape": "Bacilli",
+      "arrangement": "Single",
+      "oxygen": "Obligate Aerobe",
+      "spore": false,
+      "capsule": false,
+      "hemolysis": "Beta",
+      "motility": true,
+      "sites": ["Respiratory", "Urinary", "Skin", "Bloodstream"],
+      "symptoms": ["Fever", "Productive cough", "Shortness of breath", "Pus / Wound discharge", "Burning urination", "Redness / Erythema", "Swelling"],
+      "age_weights": {
+        "Neonate": 1,
+        "Child": 1,
+        "Adult": 2,
+        "Elderly": 3,
+        "Immunocompromised": 5
+      },
+      "site_weights": {
+        "Respiratory": 3,
+        "Urinary": 2,
+        "Skin": 3,
+        "Bloodstream": 3
+      },
+      "symptom_weights": {
+        "Fever": 1,
+        "Productive cough": 2,
+        "Shortness of breath": 1,
+        "Pus / Wound discharge": 2,
+        "Burning urination": 1,
+        "Redness / Erythema": 2,
+        "Swelling": 1
+      },
+      "culture_media": {
+        "primary": "MacConkey agar — non-lactose fermenter with characteristic blue-green pigment (pyocyanin)",
+        "secondary": "Blood agar — beta hemolysis with fruity grape-like odor"
+      },
+      "confirmatory_tests": [
+        "Oxidase positive",
+        "Pyocyanin pigment production (blue-green)",
+        "Growth at 42°C (differentiates from other Pseudomonas)",
+        "Arginine dihydrolase positive"
+      ],
+      "antibiotics": {
+        "first_line": "Piperacillin-Tazobactam / Ceftazidime",
+        "second_line": "Meropenem / Ciprofloxacin + Aminoglycoside combination",
+        "resistance_warning": "Multidrug resistant Pseudomonas (MDR-PA) is a critical WHO priority pathogen — combination therapy often required. Never use as monotherapy in severe infections."
+      },
+      "teach_me": "Pseudomonas aeruginosa ranked highly because you selected Gram negative bacilli from a [site] infection in a [age_group] patient with [symptoms]. Pseudomonas thrives in hospital environments and is the most feared opportunistic pathogen in immunocompromised and burn patients. Its natural resistance to many antibiotics makes treatment challenging.",
+      "clinical_pearl": "The only common pathogen that produces a distinctive blue-green pigment (pyocyanin) and smells of grapes — if you see blue-green pus, think Pseudomonas immediately.",
+      "gram_appearance": "Gram negative thin rods appearing singly or in pairs — may appear with surrounding blue-green pigmentation visible even on gram stain smear."
+    },
+    {
+      "id": 6,
+      "name": "Staphylococcus aureus",
+      "gram": "Gram Positive",
+      "shape": "Cocci",
+      "arrangement": "Clusters",
+      "oxygen": "Facultative Anaerobe",
+      "spore": false,
+      "capsule": false,
+      "hemolysis": "Beta",
+      "motility": false,
+      "sites": ["Skin", "Respiratory", "Bloodstream"],
+      "symptoms": ["Fever", "Pus / Wound discharge", "Redness / Erythema", "Swelling", "Productive cough", "Chills and rigors"],
+      "age_weights": {
+        "Neonate": 2,
+        "Child": 3,
+        "Adult": 4,
+        "Elderly": 3,
+        "Immunocompromised": 4
+      },
+      "site_weights": {
+        "Skin": 4,
+        "Respiratory": 3,
+        "Bloodstream": 4
+      },
+      "symptom_weights": {
+        "Fever": 1,
+        "Pus / Wound discharge": 3,
+        "Redness / Erythema": 2,
+        "Swelling": 2,
+        "Productive cough": 1,
+        "Chills and rigors": 2
+      },
+      "culture_media": {
+        "primary": "Blood agar — golden yellow colonies with beta hemolysis (clear zone)",
+        "secondary": "Mannitol Salt Agar (MSA) — selective medium, ferments mannitol producing yellow halo"
+      },
+      "confirmatory_tests": [
+        "Coagulase test positive (tube coagulase — gold standard)",
+        "Catalase positive (differentiates from Streptococcus)",
+        "Protein A detection",
+        "DNase positive"
+      ],
+      "antibiotics": {
+        "first_line": "Flucloxacillin / Nafcillin (MSSA) / Vancomycin (MRSA)",
+        "second_line": "Clindamycin / Linezolid / Daptomycin",
+        "resistance_warning": "Always test for MRSA — methicillin resistant strains require Vancomycin. Do not use beta lactams for MRSA."
+      },
+      "teach_me": "Staphylococcus aureus ranked highly because you selected Gram positive cocci in clusters from a [site] infection in a [age_group] patient with [symptoms]. S. aureus is the master pathogen of skin and soft tissue infections, producing multiple toxins including TSST-1, exfoliatin, and Panton-Valentine Leukocidin (PVL) which destroys white blood cells.",
+      "clinical_pearl": "The only coagulase positive Staphylococcus — coagulase is what makes it so dangerous, allowing it to clot plasma around itself and evade immune cells.",
+      "gram_appearance": "Gram positive cocci in irregular grape-like clusters — the clustering pattern is highly characteristic and rarely confused with other organisms."
+    },
+    {
+      "id": 7,
+      "name": "Staphylococcus saprophyticus",
+      "gram": "Gram Positive",
+      "shape": "Cocci",
+      "arrangement": "Clusters",
+      "oxygen": "Facultative Anaerobe",
+      "spore": false,
+      "capsule": false,
+      "hemolysis": "Gamma",
+      "motility": false,
+      "sites": ["Urinary"],
+      "symptoms": ["Burning urination", "Frequent urination", "Cloudy urine", "Fever"],
+      "age_weights": {
+        "Neonate": 0,
+        "Child": 1,
+        "Adult": 4,
+        "Elderly": 1,
+        "Immunocompromised": 2
+      },
+      "site_weights": {
+        "Urinary": 5
+      },
+      "symptom_weights": {
+        "Burning urination": 3,
+        "Frequent urination": 2,
+        "Cloudy urine": 2,
+        "Fever": 1
+      },
+      "culture_media": {
+        "primary": "Blood agar — white/cream colonies, non-hemolytic",
+        "secondary": "Mannitol Salt Agar — grows but does not ferment mannitol (white colonies)"
+      },
+      "confirmatory_tests": [
+        "Novobiocin resistant (key differentiator from S. epidermidis)",
+        "Coagulase negative",
+        "Catalase positive",
+        "Urease positive"
+      ],
+      "antibiotics": {
+        "first_line": "Trimethoprim-Sulfamethoxazole / Nitrofurantoin",
+        "second_line": "Ciprofloxacin / Fosfomycin",
+        "resistance_warning": "Generally susceptible but always perform sensitivity testing — resistance to TMP-SMX emerging in some regions."
+      },
+      "teach_me": "Staphylococcus saprophyticus ranked highly because you selected Gram positive cocci in clusters from a urinary infection in a [age_group] patient with [symptoms]. S. saprophyticus is the second most common cause of UTI in young sexually active women — it has a unique ability to adhere to uroepithelial cells.",
+      "clinical_pearl": "Second most common UTI organism in young sexually active women after E. coli — the key differentiator from other coagulase negative staph is novobiocin resistance.",
+      "gram_appearance": "Gram positive cocci in clusters — smaller and more regular clusters than S. aureus, indistinguishable morphologically from other coagulase negative staphylococci."
+    },
+    {
+      "id": 8,
+      "name": "Enterococcus faecalis",
+      "gram": "Gram Positive",
+      "shape": "Cocci",
+      "arrangement": "Pairs / Chains",
+      "oxygen": "Facultative Anaerobe",
+      "spore": false,
+      "capsule": false,
+      "hemolysis": "Gamma",
+      "motility": false,
+      "sites": ["Urinary", "Bloodstream"],
+      "symptoms": ["Fever", "Burning urination", "Frequent urination", "Chills and rigors"],
+      "age_weights": {
+        "Neonate": 2,
+        "Child": 1,
+        "Adult": 3,
+        "Elderly": 4,
+        "Immunocompromised": 4
+      },
+      "site_weights": {
+        "Urinary": 4,
+        "Bloodstream": 3
+      },
+      "symptom_weights": {
+        "Fever": 1,
+        "Burning urination": 2,
+        "Frequent urination": 2,
+        "Chills and rigors": 2
+      },
+      "culture_media": {
+        "primary": "Blood agar — small grey colonies, gamma hemolysis (no hemolysis)",
+        "secondary": "Bile Esculin Azide agar — hydrolyzes esculin producing black precipitate (selective for Enterococcus)"
+      },
+      "confirmatory_tests": [
+        "Bile esculin hydrolysis positive",
+        "Growth in 6.5% NaCl (salt tolerance — key feature)",
+        "PYR test positive",
+        "Catalase negative (differentiates from Staphylococcus)"
+      ],
+      "antibiotics": {
+        "first_line": "Ampicillin / Amoxicillin",
+        "second_line": "Vancomycin (VRE strains — Linezolid or Daptomycin)",
+        "resistance_warning": "Vancomycin resistant Enterococcus (VRE) is a major hospital acquired threat — screen high risk patients. Intrinsically resistant to cephalosporins."
+      },
+      "teach_me": "Enterococcus faecalis ranked highly because you selected Gram positive cocci in pairs or chains from a [site] infection in a [age_group] patient with [symptoms]. Enterococcus is remarkably hardy — it survives extreme salt concentrations, bile, and temperatures from 10°C to 45°C. It is a leading cause of hospital acquired infections particularly in elderly and immunocompromised patients.",
+      "clinical_pearl": "The only common Gram positive organism that grows in 6.5% salt AND hydrolyzes bile esculin — salt tolerance is its superpower and its lab identifier.",
+      "gram_appearance": "Gram positive cocci appearing in pairs or short chains — can be confused with Streptococcus morphologically, biochemical tests are essential for differentiation."
+    },
+    {
+      "id": 9,
+      "name": "Streptococcus pyogenes",
+      "gram": "Gram Positive",
+      "shape": "Cocci",
+      "arrangement": "Chains",
+      "oxygen": "Facultative Anaerobe",
+      "spore": false,
+      "capsule": true,
+      "hemolysis": "Beta",
+      "motility": false,
+      "sites": ["Respiratory", "Skin"],
+      "symptoms": ["Fever", "Sore throat", "Difficulty swallowing", "Redness / Erythema", "Swelling", "Pus / Wound discharge", "Rash"],
+      "age_weights": {
+        "Neonate": 1,
+        "Child": 5,
+        "Adult": 3,
+        "Elderly": 2,
+        "Immunocompromised": 3
+      },
+      "site_weights": {
+        "Respiratory": 4,
+        "Skin": 4
+      },
+      "symptom_weights": {
+        "Fever": 1,
+        "Sore throat": 3,
+        "Difficulty swallowing": 2,
+        "Redness / Erythema": 2,
+        "Swelling": 1,
+        "Pus / Wound discharge": 2,
+        "Rash": 2
+      },
+      "culture_media": {
+        "primary": "Blood agar — clear beta hemolysis zone (complete RBC destruction)",
+        "secondary": "Sheep blood agar — enhanced beta hemolysis visualization"
+      },
+      "confirmatory_tests": [
+        "Bacitracin sensitivity (zone of inhibition — Group A Strep)",
+        "PYR test positive",
+        "CAMP test negative (differentiates from Group B)",
+        "Lancefield Group A antigen by latex agglutination"
+      ],
+      "antibiotics": {
+        "first_line": "Penicillin V / Amoxicillin",
+        "second_line": "Erythromycin / Azithromycin (penicillin allergy)",
+        "resistance_warning": "No penicillin resistance reported to date — however macrolide resistance emerging. Treat fully to prevent rheumatic fever."
+      },
+      "teach_me": "Streptococcus pyogenes ranked highly because you selected Gram positive cocci in chains from a [site] infection in a [age_group] patient with [symptoms]. Group A Strep is notorious for causing strep throat in children and dangerous skin infections. More importantly untreated infection can trigger rheumatic fever and glomerulonephritis — non-suppurative complications that damage the heart and kidneys.",
+      "clinical_pearl": "The only major pathogen still fully susceptible to penicillin after 70+ years of use — but treat it completely or risk rheumatic fever damaging the heart valves permanently.",
+      "gram_appearance": "Gram positive cocci in long chains — chain length and regularity is characteristic, distinguishable from enterococcal short chains."
+    },
+    {
+      "id": 10,
+      "name": "Neisseria meningitidis",
+      "gram": "Gram Negative",
+      "shape": "Cocci",
+      "arrangement": "Pairs / Diplococci",
+      "oxygen": "Obligate Aerobe",
+      "spore": false,
+      "capsule": true,
+      "hemolysis": "Gamma",
+      "motility": false,
+      "sites": ["CNS", "Bloodstream"],
+      "symptoms": ["Fever", "Neck stiffness", "Headache", "Photophobia", "Altered consciousness", "Rash", "Chills and rigors"],
+      "age_weights": {
+        "Neonate": -2,
+        "Child": 4,
+        "Adult": 4,
+        "Elderly": 2,
+        "Immunocompromised": 3
+      },
+      "site_weights": {
+        "CNS": 5,
+        "Bloodstream": 3
+      },
+      "symptom_weights": {
+        "Fever": 1,
+        "Neck stiffness": 3,
+        "Headache": 2,
+        "Photophobia": 2,
+        "Altered consciousness": 2,
+        "Rash": 3,
+        "Chills and rigors": 1
+      },
+      "culture_media": {
+        "primary": "Chocolate agar — fastidious organism requiring enriched media with X and V factors",
+        "secondary": "Modified Thayer Martin agar — selective medium for Neisseria species"
+      },
+      "confirmatory_tests": [
+        "Oxidase positive",
+        "Glucose and maltose fermentation positive (differentiates from N. gonorrhoeae)",
+        "Latex agglutination for capsular serogroup",
+        "CSF Gram stain — intracellular diplococci in neutrophils"
+      ],
+      "antibiotics": {
+        "first_line": "Ceftriaxone IV (empiric and definitive)",
+        "second_line": "Penicillin G (if susceptible) / Chloramphenicol (resource limited settings)",
+        "resistance_warning": "Treat immediately — do not wait for culture confirmation. Prophylaxis with Rifampicin or Ciprofloxacin for close contacts."
+      },
+      "teach_me": "Neisseria meningitidis ranked highly because you selected Gram negative diplococci from a [site] infection in a [age_group] patient with [symptoms]. Meningococcal disease is a medical emergency — the characteristic non-blanching petechial rash can progress to fulminant purpura fulminans and death within hours. Every minute of delayed treatment worsens outcome.",
+      "clinical_pearl": "The classic triad is fever, neck stiffness and non-blanching rash — if you see all three, treat immediately without waiting for lumbar puncture results.",
+      "gram_appearance": "Gram negative kidney bean shaped diplococci — characteristically found inside neutrophils (intracellular) on CSF Gram stain, a virtually diagnostic finding."
+    },
+    {
+      "id": 11,
+      "name": "Haemophilus influenzae",
+      "gram": "Gram Negative",
+      "shape": "Coccobacilli",
+      "arrangement": "Single",
+      "oxygen": "Facultative Anaerobe",
+      "spore": false,
+      "capsule": true,
+      "hemolysis": "Gamma",
+      "motility": false,
+      "sites": ["Respiratory", "CNS"],
+      "symptoms": ["Fever", "Productive cough", "Shortness of breath", "Neck stiffness", "Headache", "Ear pain"],
+      "age_weights": {
+        "Neonate": -1,
+        "Child": 5,
+        "Adult": 2,
+        "Elderly": 2,
+        "Immunocompromised": 3
+      },
+      "site_weights": {
+        "Respiratory": 4,
+        "CNS": 3
+      },
+      "symptom_weights": {
+        "Fever": 1,
+        "Productive cough": 2,
+        "Shortness of breath": 1,
+        "Neck stiffness": 2,
+        "Headache": 1,
+        "Ear pain": 2
+      },
+      "culture_media": {
+        "primary": "Chocolate agar — provides both X factor (hemin) and V factor (NAD) required for growth",
+        "secondary": "Blood agar with S. aureus streak — satellitism phenomenon (growth only near staph colonies)"
+      },
+      "confirmatory_tests": [
+        "X and V factor requirement (growth only with both factors)",
+        "Satellitism around S. aureus colonies on blood agar",
+        "Latex agglutination for capsular type b (Hib)",
+        "Oxidase positive"
+      ],
+      "antibiotics": {
+        "first_line": "Amoxicillin-Clavulanate / Ceftriaxone (meningitis)",
+        "second_line": "Azithromycin / Chloramphenicol",
+        "resistance_warning": "Beta-lactamase producing strains (BLPAR) resistant to plain Amoxicillin — always test. Hib vaccine has dramatically reduced type b disease."
+      },
+      "teach_me": "Haemophilus influenzae ranked highly because you selected Gram negative coccobacilli from a [site] infection in a [age_group] patient with [symptoms]. Despite its name H. influenzae does not cause influenza — it is a major cause of otitis media, sinusitis and epiglottitis in children. The Hib vaccine has nearly eliminated type b meningitis in vaccinated populations.",
+      "clinical_pearl": "Requires both X factor (hemin) and V factor (NAD) to grow — it literally cannot survive without both, which is why it only grows on chocolate agar or near S. aureus on blood agar.",
+      "gram_appearance": "Gram negative pleomorphic coccobacilli — shape varies from short rods to almost coccal forms, making morphology alone insufficient for identification."
+    },
+    {
+      "id": 12,
+      "name": "Clostridium perfringens",
+      "gram": "Gram Positive",
+      "shape": "Bacilli",
+      "arrangement": "Single",
+      "oxygen": "Obligate Anaerobe",
+      "spore": true,
+      "capsule": true,
+      "hemolysis": "Double zone (Beta)",
+      "motility": false,
+      "sites": ["Skin", "Gastrointestinal"],
+      "symptoms": ["Fever", "Pus / Wound discharge", "Swelling", "Abdominal cramps", "Diarrhea", "Redness / Erythema"],
+      "age_weights": {
+        "Neonate": 1,
+        "Child": 1,
+        "Adult": 3,
+        "Elderly": 3,
+        "Immunocompromised": 3
+      },
+      "site_weights": {
+        "Skin": 4,
+        "Gastrointestinal": 3
+      },
+      "symptom_weights": {
+        "Fever": 1,
+        "Pus / Wound discharge": 3,
+        "Swelling": 2,
+        "Abdominal cramps": 2,
+        "Diarrhea": 1,
+        "Redness / Erythema": 2
+      },
+      "culture_media": {
+        "primary": "Blood agar (anaerobic) — double zone of hemolysis (inner complete, outer incomplete)",
+        "secondary": "Egg yolk agar — Nagler reaction positive (lecithinase activity produces opacity)"
+      },
+      "confirmatory_tests": [
+        "Nagler reaction positive (lecithinase on egg yolk agar)",
+        "Stormy fermentation in litmus milk",
+        "Non-motile (differentiates from other Clostridium)",
+        "Anaerobic growth only"
+      ],
+      "antibiotics": {
+        "first_line": "Penicillin G + Clindamycin (gas gangrene)",
+        "second_line": "Metronidazole / Meropenem",
+        "resistance_warning": "Surgical debridement is as critical as antibiotics in gas gangrene — antibiotics alone are insufficient for tissue infection. Hyperbaric oxygen may be adjunctive."
+      },
+      "teach_me": "Clostridium perfringens ranked highly because you selected Gram positive spore forming bacilli from a [site] infection in a [age_group] patient with [symptoms]. C. perfringens produces over 20 different toxins, with alpha toxin (lecithinase) being the most destructive — it dissolves cell membranes causing the devastating gas gangrene where gas bubbles form in dying tissue.",
+      "clinical_pearl": "Gas gangrene moves at an alarming speed — tissue can be destroyed within hours. The crepitus (crackling sensation) felt on palpation due to gas in tissue is a clinical emergency sign.",
+      "gram_appearance": "Gram positive large rectangular boxcar shaped rods — spores are rarely seen in clinical specimens as they form under stress conditions."
+    },
+    {
+      "id": 13,
+      "name": "Acinetobacter baumannii",
+      "gram": "Gram Negative",
+      "shape": "Coccobacilli",
+      "arrangement": "Pairs / Clusters",
+      "oxygen": "Obligate Aerobe",
+      "spore": false,
+      "capsule": false,
+      "hemolysis": "Gamma",
+      "motility": false,
+      "sites": ["Respiratory", "Bloodstream", "Urinary", "Skin"],
+      "symptoms": ["Fever", "Productive cough", "Shortness of breath", "Pus / Wound discharge", "Chills and rigors"],
+      "age_weights": {
+        "Neonate": 2,
+        "Child": 1,
+        "Adult": 3,
+        "Elderly": 3,
+        "Immunocompromised": 5
+      },
+      "site_weights": {
+        "Respiratory": 4,
+        "Bloodstream": 3,
+        "Urinary": 2,
+        "Skin": 2
+      },
+      "symptom_weights": {
+        "Fever": 1,
+        "Productive cough": 2,
+        "Shortness of breath": 2,
+        "Pus / Wound discharge": 2,
+        "Chills and rigors": 2
+      },
+      "culture_media": {
+        "primary": "Blood agar — smooth grey white colonies, non-hemolytic",
+        "secondary": "MacConkey agar — non-lactose fermenter, pale colonies"
+      },
+      "confirmatory_tests": [
+        "Oxidase negative (differentiates from Pseudomonas)",
+        "Non-motile",
+        "Glucose non-fermenter",
+        "Growth at 44°C"
+      ],
+      "antibiotics": {
+        "first_line": "Meropenem / Imipenem (carbapenem sensitive strains)",
+        "second_line": "Colistin / Polymyxin B (carbapenem resistant strains)",
+        "resistance_warning": "Carbapenem resistant Acinetobacter baumannii (CRAB) is a critical WHO priority pathogen — often pan-drug resistant with very limited treatment options."
+      },
+      "teach_me": "Acinetobacter baumannii ranked highly because you selected Gram negative coccobacilli from a [site] infection in a [age_group] patient with [symptoms]. Acinetobacter is the ultimate hospital survivor — it can persist on dry surfaces for weeks and is notorious for causing outbreaks in ICUs. It has been called the 'Iraqibacter' due to its prevalence in combat wound infections.",
+      "clinical_pearl": "Can survive on dry hospital surfaces for up to 30 days — hand hygiene and surface decontamination are the primary defenses against nosocomial Acinetobacter outbreaks.",
+      "gram_appearance": "Gram negative coccobacilli appearing in pairs or clusters — can appear almost Gram positive due to tendency to retain crystal violet, requiring careful interpretation."
+    },
+    {
+      "id": 14,
+      "name": "Mycoplasma pneumoniae",
+      "gram": "No Gram Reaction",
+      "shape": "Pleomorphic",
+      "arrangement": "Single",
+      "oxygen": "Facultative Anaerobe",
+      "spore": false,
+      "capsule": false,
+      "hemolysis": "Gamma",
+      "motility": true,
+      "sites": ["Respiratory"],
+      "symptoms": ["Fever", "Cough", "Shortness of breath", "Fatigue / Malaise", "Headache"],
+      "age_weights": {
+        "Neonate": 0,
+        "Child": 3,
+        "Adult": 4,
+        "Elderly": 2,
+        "Immunocompromised": 3
+      },
+      "site_weights": {
+        "Respiratory": 5
+      },
+      "symptom_weights": {
+        "Fever": 1,
+        "Cough": 3,
+        "Shortness of breath": 2,
+        "Fatigue / Malaise": 2,
+        "Headache": 1
+      },
+      "culture_media": {
+        "primary": "PPLO (Pleuropneumonia-like organisms) agar — fried egg colonies after 1-3 weeks incubation",
+        "secondary": "SP4 broth — specialized enriched medium for Mycoplasma isolation"
+      },
+      "confirmatory_tests": [
+        "PCR detection (gold standard — most sensitive)",
+        "Cold agglutinin test positive (IgM antibodies agglutinate RBCs at 4°C)",
+        "Complement fixation serology",
+        "No cell wall present — Gram stain not applicable"
+      ],
+      "antibiotics": {
+        "first_line": "Azithromycin / Clarithromycin (macrolides)",
+        "second_line": "Doxycycline / Levofloxacin",
+        "resistance_warning": "No cell wall — all beta lactam antibiotics are completely ineffective. Macrolide resistance emerging in Asia — use fluoroquinolones if macrolide resistance suspected."
+      },
+      "teach_me": "Mycoplasma pneumoniae ranked highly because you selected a respiratory infection in a [age_group] patient with [symptoms]. Mycoplasma causes 'walking pneumonia' — patients feel unwell but are not sick enough to be hospitalized. It lacks a cell wall entirely, making it invisible on Gram stain and resistant to all beta lactam antibiotics.",
+      "clinical_pearl": "The classic walking pneumonia — patient sick enough to have pneumonia on X-ray but well enough to walk to the clinic. No cell wall means penicillin is completely useless.",
+      "gram_appearance": "Cannot be visualized on Gram stain — lacks a cell wall entirely. Diagnosis relies on PCR, serology and specialized culture."
+    },
+    {
+      "id": 15,
+      "name": "Legionella pneumophila",
+      "gram": "Gram Negative",
+      "shape": "Bacilli",
+      "arrangement": "Single",
+      "oxygen": "Obligate Aerobe",
+      "spore": false,
+      "capsule": false,
+      "hemolysis": "Gamma",
+      "motility": true,
+      "sites": ["Respiratory"],
+      "symptoms": ["Fever", "Productive cough", "Shortness of breath", "Chest pain", "Fatigue / Malaise", "Chills and rigors"],
+      "age_weights": {
+        "Neonate": 0,
+        "Child": 1,
+        "Adult": 3,
+        "Elderly": 5,
+        "Immunocompromised": 5
+      },
+      "site_weights": {
+        "Respiratory": 5
+      },
+      "symptom_weights": {
+        "Fever": 2,
+        "Productive cough": 2,
+        "Shortness of breath": 2,
+        "Chest pain": 1,
+        "Fatigue / Malaise": 2,
+        "Chills and rigors": 2
+      },
+      "culture_media": {
+        "primary": "BCYE agar (Buffered Charcoal Yeast Extract) — only medium supporting Legionella growth",
+        "secondary": "BCYE without L-cysteine — Legionella will NOT grow (requires L-cysteine, confirming identity)"
+      },
+      "confirmatory_tests": [
+        "Urinary antigen detection (rapid, detects serogroup 1 — most common)",
+        "L-cysteine requirement for growth",
+        "DFA (Direct Fluorescent Antibody) staining",
+        "PCR from respiratory specimens"
+      ],
+      "antibiotics": {
+        "first_line": "Azithromycin / Levofloxacin",
+        "second_line": "Doxycycline / Rifampicin (combination for severe disease)",
+        "resistance_warning": "Beta lactams are ineffective — Legionella survives inside macrophages, requiring antibiotics that penetrate intracellularly. Never use beta lactams alone."
+      },
+      "teach_me": "Legionella pneumophila ranked highly because you selected Gram negative bacilli from a respiratory infection in a [age_group] patient with [symptoms]. Legionella hides inside amoeba in water systems — air conditioning cooling towers, hospital water systems and decorative fountains are classic sources. It cannot spread person to person.",
+      "clinical_pearl": "Look for the epidemiological clue — hotel stay, hospital exposure, or large building with cooling towers. Legionella never spreads person to person, always from a contaminated water source.",
+      "gram_appearance": "Gram negative thin rods — stains poorly with standard Gram stain, requiring specific DFA staining or silver impregnation for visualization in tissue."
+    },
+    {
+      "id": 16,
+      "name": "Moraxella catarrhalis",
+      "gram": "Gram Negative",
+      "shape": "Cocci",
+      "arrangement": "Pairs / Diplococci",
+      "oxygen": "Obligate Aerobe",
+      "spore": false,
+      "capsule": false,
+      "hemolysis": "Gamma",
+      "motility": false,
+      "sites": ["Respiratory"],
+      "symptoms": ["Fever", "Productive cough", "Ear pain", "Runny nose", "Sore throat"],
+      "age_weights": {
+        "Neonate": 1,
+        "Child": 4,
+        "Adult": 2,
+        "Elderly": 3,
+        "Immunocompromised": 2
+      },
+      "site_weights": {
+        "Respiratory": 4
+      },
+      "symptom_weights": {
+        "Fever": 1,
+        "Productive cough": 2,
+        "Ear pain": 3,
+        "Runny nose": 2,
+        "Sore throat": 1
+      },
+      "culture_media": {
+        "primary": "Blood agar — grey white colonies that slide intact across agar surface (hockey puck sign)",
+        "secondary": "Chocolate agar — supports growth of this fastidious organism"
+      },
+      "confirmatory_tests": [
+        "Oxidase positive",
+        "DNase positive",
+        "Hockey puck sign (colonies slide intact on agar)",
+        "Glucose and maltose non-fermenting (differentiates from Neisseria)"
+      ],
+      "antibiotics": {
+        "first_line": "Amoxicillin-Clavulanate / Trimethoprim-Sulfamethoxazole",
+        "second_line": "Azithromycin / Second generation cephalosporins",
+        "resistance_warning": "Over 90% of strains produce beta-lactamase — plain Amoxicillin is almost always ineffective. Always use beta-lactamase stable antibiotics."
+      },
+      "teach_me": "Moraxella catarrhalis ranked highly because you selected Gram negative diplococci from a respiratory infection in a [age_group] patient with [symptoms]. Moraxella is a common cause of otitis media in children and exacerbations of COPD in adults. It is often mistaken for Neisseria on Gram stain but is distinguished by its inability to ferment sugars.",
+      "clinical_pearl": "The hockey puck sign — colonies slide intact across the agar surface when pushed with a loop. No other common respiratory pathogen does this.",
+      "gram_appearance": "Gram negative kidney shaped diplococci — nearly identical to Neisseria on Gram stain, making biochemical differentiation essential."
+    },
+    {
+      "id": 17,
+      "name": "Listeria monocytogenes",
+      "gram": "Gram Positive",
+      "shape": "Bacilli",
+      "arrangement": "Single",
+      "oxygen": "Facultative Anaerobe",
+      "spore": false,
+      "capsule": false,
+      "hemolysis": "Beta",
+      "motility": true,
+      "sites": ["CNS", "Bloodstream"],
+      "symptoms": ["Fever", "Neck stiffness", "Headache", "Altered consciousness", "Fatigue / Malaise"],
+      "age_weights": {
+        "Neonate": 5,
+        "Child": 1,
+        "Adult": 1,
+        "Elderly": 4,
+        "Immunocompromised": 5
+      },
+      "site_weights": {
+        "CNS": 4,
+        "Bloodstream": 3
+      },
+      "symptom_weights": {
+        "Fever": 1,
+        "Neck stiffness": 3,
+        "Headache": 2,
+        "Altered consciousness": 2,
+        "Fatigue / Malaise": 1
+      },
+      "culture_media": {
+        "primary": "Blood agar — narrow zone of beta hemolysis around small colonies",
+        "secondary": "PALCAM agar — selective medium for Listeria isolation from food and clinical samples"
+      },
+      "confirmatory_tests": [
+        "Tumbling motility at 25°C (umbrella shaped growth in soft agar)",
+        "CAMP test positive with S. aureus (enhanced hemolysis)",
+        "Cold enrichment growth (4°C) — unique property",
+        "Catalase positive, Oxidase negative"
+      ],
+      "antibiotics": {
+        "first_line": "Ampicillin + Gentamicin (synergistic combination)",
+        "second_line": "Trimethoprim-Sulfamethoxazole",
+        "resistance_warning": "Intrinsically resistant to cephalosporins — do not use ceftriaxone alone for empiric meningitis coverage if Listeria is suspected (neonates, elderly, immunocompromised)."
+      },
+      "teach_me": "Listeria monocytogenes ranked highly because you selected Gram positive bacilli from a [site] infection in a [age_group] patient with [symptoms]. Listeria is the great mimicker — it looks like a Gram positive rod but behaves unlike most. It thrives at refrigerator temperatures (4°C), making contaminated ready-to-eat foods like soft cheese and deli meats dangerous even when refrigerated.",
+      "clinical_pearl": "The only pathogen that grows and multiplies at refrigerator temperature (4°C) — cold storage does not protect against Listeria, which is why pregnant women and immunocompromised patients must avoid soft cheeses and deli meats.",
+      "gram_appearance": "Gram positive short rods appearing singly or in V and L shapes — can be confused with diphtheroids, clinical context is essential for suspicion."
+    },
+    {
+      "id": 18,
+      "name": "Streptococcus agalactiae",
+      "gram": "Gram Positive",
+      "shape": "Cocci",
+      "arrangement": "Chains",
+      "oxygen": "Facultative Anaerobe",
+      "spore": false,
+      "capsule": true,
+      "hemolysis": "Beta",
+      "motility": false,
+      "sites": ["CNS", "Bloodstream"],
+      "symptoms": ["Fever", "Neck stiffness", "Altered consciousness", "Chills and rigors"],
+      "age_weights": {
+        "Neonate": 6,
+        "Child": 1,
+        "Adult": 1,
+        "Elderly": 2,
+        "Immunocompromised": 3
+      },
+      "site_weights": {
+        "CNS": 4,
+        "Bloodstream": 3
+      },
+      "symptom_weights": {
+        "Fever": 1,
+        "Neck stiffness": 3,
+        "Altered consciousness": 2,
+        "Chills and rigors": 2
+      },
+      "culture_media": {
+        "primary": "Blood agar — beta hemolysis with small narrow clear zone",
+        "secondary": "Granada medium — produces orange/red pigment characteristic of Group B Strep"
+      },
+      "confirmatory_tests": [
+        "CAMP test positive (arrowhead hemolysis with S. aureus)",
+        "Hippurate hydrolysis positive",
+        "Lancefield Group B antigen by latex agglutination",
+        "Bacitracin resistant (differentiates from Group A)"
+      ],
+      "antibiotics": {
+        "first_line": "Penicillin G / Ampicillin",
+        "second_line": "Cefazolin / Vancomycin (penicillin allergy)",
+        "resistance_warning": "Intrapartum prophylaxis recommended for GBS positive mothers — screen all pregnant women at 35-37 weeks gestation to prevent neonatal infection."
+      },
+      "teach_me": "Streptococcus agalactiae ranked highly because you selected Gram positive cocci in chains from a [site] infection in a [age_group] patient with [symptoms]. Group B Strep is the leading cause of neonatal meningitis and sepsis in the first week of life. Babies acquire it during passage through the birth canal from colonized mothers.",
+      "clinical_pearl": "CAMP test produces a distinctive arrowhead shaped zone of hemolysis where it meets S. aureus — this arrow points directly to Group B Strep diagnosis.",
+      "gram_appearance": "Gram positive cocci in chains — similar to Group A Strep morphologically, Lancefield grouping is essential for definitive identification."
+    },
+    {
+      "id": 19,
+      "name": "Salmonella enterica",
+      "gram": "Gram Negative",
+      "shape": "Bacilli",
+      "arrangement": "Single",
+      "oxygen": "Facultative Anaerobe",
+      "spore": false,
+      "capsule": false,
+      "hemolysis": "Gamma",
+      "motility": true,
+      "sites": ["Gastrointestinal", "Bloodstream"],
+      "symptoms": ["Fever", "Diarrhea", "Abdominal cramps", "Nausea / Vomiting", "Chills and rigors", "Night sweats"],
+      "age_weights": {
+        "Neonate": 2,
+        "Child": 3,
+        "Adult": 3,
+        "Elderly": 3,
+        "Immunocompromised": 4
+      },
+      "site_weights": {
+        "Gastrointestinal": 5,
+        "Bloodstream": 2
+      },
+      "symptom_weights": {
+        "Fever": 2,
+        "Diarrhea": 3,
+        "Abdominal cramps": 2,
+        "Nausea / Vomiting": 2,
+        "Chills and rigors": 1,
+        "Night sweats": 2
+      },
+      "culture_media": {
+        "primary": "XLD agar (Xylose Lysine Deoxycholate) — black centered colonies due to H2S production",
+        "secondary": "MacConkey agar — non-lactose fermenter producing pale colonies"
+      },
+      "confirmatory_tests": [
+        "TSI slant — alkaline slant / acid butt with H2S production",
+        "Urease negative (differentiates from Proteus)",
+        "Motile",
+        "Widal test / Typhidot serology for typhoid fever"
+      ],
+      "antibiotics": {
+        "first_line": "Azithromycin / Ceftriaxone (typhoid) / Supportive only (gastroenteritis)",
+        "second_line": "Ciprofloxacin (check sensitivity — resistance common in South Asia)",
+        "resistance_warning": "Multidrug resistant Salmonella Typhi (MDR typhoid) resistant to Ampicillin, Chloramphenicol and TMP-SMX widely prevalent. Extensively drug resistant (XDR) typhoid emerging in Pakistan — Azithromycin now first line."
+      },
+      "teach_me": "Salmonella enterica ranked highly because you selected Gram negative bacilli from a [site] infection in a [age_group] patient with [symptoms]. Salmonella Typhi causes systemic typhoid fever — a prolonged febrile illness with relative bradycardia, rose spots and hepatosplenomegaly. Non-typhoidal Salmonella causes self-limiting gastroenteritis that usually does not require antibiotics.",
+      "clinical_pearl": "Relative bradycardia — the pulse is slower than expected for the degree of fever. In a patient with high fever and slower than expected heart rate, think typhoid fever.",
+      "gram_appearance": "Gram negative straight rods appearing singly — morphologically indistinguishable from other Enterobacteriaceae, selective media and biochemical tests are essential."
+    },
+    {
+      "id": 20,
+      "name": "Shigella spp.",
+      "gram": "Gram Negative",
+      "shape": "Bacilli",
+      "arrangement": "Single",
+      "oxygen": "Facultative Anaerobe",
+      "spore": false,
+      "capsule": false,
+      "hemolysis": "Gamma",
+      "motility": false,
+      "sites": ["Gastrointestinal"],
+      "symptoms": ["Fever", "Bloody diarrhea", "Abdominal cramps", "Nausea / Vomiting"],
+      "age_weights": {
+        "Neonate": 1,
+        "Child": 4,
+        "Adult": 3,
+        "Elderly": 3,
+        "Immunocompromised": 3
+      },
+      "site_weights": {
+        "Gastrointestinal": 5
+      },
+      "symptom_weights": {
+        "Fever": 1,
+        "Bloody diarrhea": 4,
+        "Abdominal cramps": 2,
+        "Nausea / Vomiting": 1
+      },
+      "culture_media": {
+        "primary": "MacConkey agar — non-lactose fermenter producing pale colorless colonies",
+        "secondary": "XLD agar — pink/red colonies without black center (no H2S, differentiates from Salmonella)"
+      },
+      "confirmatory_tests": [
+        "No H2S production (key difference from Salmonella)",
+        "Non-motile (key difference from Salmonella)",
+        "Lactose non-fermenter",
+        "Serotyping for species identification (A, B, C, D)"
+      ],
+      "antibiotics": {
+        "first_line": "Azithromycin / Ciprofloxacin",
+        "second_line": "Ceftriaxone / Pivmecillinam",
+        "resistance_warning": "TMP-SMX and Ampicillin resistance very common globally — do not use empirically. Azithromycin preferred in children. Avoid antidiarrheal agents — can worsen disease."
+      },
+      "teach_me": "Shigella spp. ranked highly because you selected Gram negative bacilli from a gastrointestinal infection in a [age_group] patient with [symptoms]. Shigella causes dysentery — the combination of bloody diarrhea, mucus and severe cramps. It is extraordinarily infectious — as few as 10-100 organisms can cause disease, making it highly transmissible in daycare settings and refugee camps.",
+      "clinical_pearl": "The most infectious of all bacterial diarrheal pathogens — only 10 organisms are needed to cause disease. By comparison Salmonella requires 100,000 organisms. Handwashing is the single most effective prevention.",
+      "gram_appearance": "Gram negative straight rods — morphologically identical to E. coli and Salmonella, differentiation entirely dependent on culture characteristics and biochemical testing."
+    },
+    {
+      "id": 21,
+      "name": "Bordetella pertussis",
+      "gram": "Gram Negative",
+      "shape": "Coccobacilli",
+      "arrangement": "Single",
+      "oxygen": "Obligate Aerobe",
+      "spore": false,
+      "capsule": true,
+      "hemolysis": "Gamma",
+      "motility": false,
+      "sites": ["Respiratory"],
+      "symptoms": ["Cough", "Whooping sound", "Fever", "Fatigue / Malaise"],
+      "age_weights": {
+        "Neonate": 5,
+        "Child": 5,
+        "Adult": 2,
+        "Elderly": 2,
+        "Immunocompromised": 2
+      },
+      "site_weights": {
+        "Respiratory": 5
+      },
+      "symptom_weights": {
+        "Cough": 3,
+        "Whooping sound": 5,
+        "Fever": 1,
+        "Fatigue / Malaise": 1
+      },
+      "culture_media": {
+        "primary": "Bordet-Gengou agar — mercury droplet colonies with narrow hemolysis zone",
+        "secondary": "Regan-Lowe charcoal agar — modern selective medium for Bordetella"
+      },
+      "confirmatory_tests": [
+        "PCR from nasopharyngeal swab (most sensitive — gold standard)",
+        "DFA (Direct Fluorescent Antibody) staining",
+        "Culture on Bordet-Gengou (slow — 7-10 days)",
+        "Serology (IgA/IgG anti-pertussis toxin)"
+      ],
+      "antibiotics": {
+        "first_line": "Azithromycin (drug of choice, especially in infants)",
+        "second_line": "Clarithromycin / Trimethoprim-Sulfamethoxazole",
+        "resistance_warning": "Antibiotics reduce transmission but may not significantly shorten illness if started in paroxysmal phase. Vaccination (DTaP/Tdap) is the primary prevention strategy."
+      },
+      "teach_me": "Bordetella pertussis ranked highly because you selected Gram negative coccobacilli from a respiratory infection in a [age_group] patient with [symptoms]. Pertussis (whooping cough) is a three-stage disease — catarrhal (cold-like), paroxysmal (severe coughing fits with characteristic whoop) and convalescent. In infants, the whoop may be absent — apnea can be the only sign.",
+      "clinical_pearl": "The whoop is the sound of a desperate inspiratory gasp after a prolonged coughing fit that empties the lungs — in infants this whoop may be absent, making diagnosis easily missed.",
+      "gram_appearance": "Gram negative tiny coccobacilli — extremely small and faintly staining, easy to overlook on Gram stain. PCR is far more reliable for diagnosis."
+    },
+    {
+      "id": 22,
+      "name": "Campylobacter jejuni",
+      "gram": "Gram Negative",
+      "shape": "Bacilli",
+      "arrangement": "Single",
+      "oxygen": "Microaerophilic",
+      "spore": false,
+      "capsule": false,
+      "hemolysis": "Gamma",
+      "motility": true,
+      "sites": ["Gastrointestinal"],
+      "symptoms": ["Fever", "Bloody diarrhea", "Abdominal cramps", "Nausea / Vomiting"],
+      "age_weights": {
+        "Neonate": 1,
+        "Child": 4,
+        "Adult": 3,
+        "Elderly": 2,
+        "Immunocompromised": 3
+      },
+      "site_weights": {
+        "Gastrointestinal": 5
+      },
+      "symptom_weights": {
+        "Fever": 2,
+        "Bloody diarrhea": 3,
+        "Abdominal cramps": 3,
+        "Nausea / Vomiting": 2
+      },
+      "culture_media": {
+        "primary": "CCDA (Charcoal Cefoperazone Deoxycholate Agar) — selective medium incubated at 42°C microaerophilically",
+        "secondary": "Campylobacter blood agar — grey flat spreading colonies"
+      },
+      "confirmatory_tests": [
+        "Oxidase positive",
+        "Hippurate hydrolysis positive (C. jejuni — differentiates from C. coli)",
+        "Darting motility (corkscrew motility under microscopy)",
+        "Growth at 42°C but not 25°C"
+      ],
+      "antibiotics": {
+        "first_line": "Azithromycin (most cases self-limiting — antibiotics only for severe disease)",
+        "second_line": "Ciprofloxacin (check sensitivity — resistance increasing globally)",
+        "resistance_warning": "Fluoroquinolone resistance in Campylobacter is increasing dramatically worldwide due to use in poultry farming. Azithromycin is now preferred. Post-infectious Guillain-Barré syndrome is a rare but serious complication."
+      },
+      "teach_me": "Campylobacter jejuni ranked highly because you selected Gram negative bacilli from a gastrointestinal infection in a [age_group] patient with [symptoms]. Campylobacter is the most common bacterial cause of gastroenteritis globally — usually acquired from undercooked poultry. It is unique in requiring microaerophilic conditions (5% O2) to grow.",
+      "clinical_pearl": "The most common bacterial cause of diarrhea globally — and undercooked chicken is the primary source. Post-infectious Guillain-Barré syndrome (ascending paralysis) is a rare but devastating complication.",
+      "gram_appearance": "Gram negative thin curved or S-shaped rods (seagull shaped) — the curved morphology is characteristic and suggestive when seen on Gram stain of stool."
+    },
+    {
+      "id": 23,
+      "name": "Vibrio cholerae",
+      "gram": "Gram Negative",
+      "shape": "Bacilli",
+      "arrangement": "Single",
+      "oxygen": "Facultative Anaerobe",
+      "spore": false,
+      "capsule": false,
+      "hemolysis": "Gamma",
+      "motility": true,
+      "sites": ["Gastrointestinal"],
+      "symptoms": ["Diarrhea", "Rice water stools", "Nausea / Vomiting", "Fever"],
+      "age_weights": {
+        "Neonate": 1,
+        "Child": 3,
+        "Adult": 4,
+        "Elderly": 4,
+        "Immunocompromised": 3
+      },
+      "site_weights": {
+        "Gastrointestinal": 5
+      },
+      "symptom_weights": {
+        "Diarrhea": 3,
+        "Rice water stools": 5,
+        "Nausea / Vomiting": 2,
+        "Fever": 1
+      },
+      "culture_media": {
+        "primary": "TCBS agar (Thiosulfate Citrate Bile Salts Sucrose) — yellow colonies (sucrose fermenter)",
+        "secondary": "Alkaline Peptone Water (APW) — enrichment broth, pH 8.6 favors Vibrio growth"
+      },
+      "confirmatory_tests": [
+        "Oxidase positive",
+        "String test positive (agglutination with O1 or O139 antiserum)",
+        "Comma shaped motility (single polar flagellum — shooting star motility)",
+        "Cholera toxin detection by ELISA"
+      ],
+      "antibiotics": {
+        "first_line": "Oral Rehydration Therapy (ORS) is PRIMARY treatment — Doxycycline (adults) / Azithromycin (children and pregnant)",
+        "second_line": "Ciprofloxacin / Tetracycline",
+        "resistance_warning": "Rehydration is life saving — antibiotics are adjunctive only. A patient can lose 1 liter of fluid per hour — death from dehydration occurs within hours without ORS."
+      },
+      "teach_me": "Vibrio cholerae ranked highly because you selected Gram negative bacilli from a gastrointestinal infection in a [age_group] patient with [symptoms including rice water stools]. Cholera toxin (CT) causes massive fluid secretion into the gut by permanently activating adenylyl cyclase — the resulting rice water diarrhea can cause fatal dehydration within hours.",
+      "clinical_pearl": "Rice water stools — painless, odorless, massive watery diarrhea that looks like water washed through rice. The fluid loss rate can exceed 1 liter per hour — ORS is more life-saving than any antibiotic.",
+      "gram_appearance": "Gram negative comma shaped (curved) rods — the characteristic curved morphology gives Vibrio its name (vibrate/vibrating). Shooting star motility visible under dark field microscopy."
+    },
+    {
+      "id": 24,
+      "name": "Clostridioides difficile",
+      "gram": "Gram Positive",
+      "shape": "Bacilli",
+      "arrangement": "Single",
+      "oxygen": "Obligate Anaerobe",
+      "spore": true,
+      "capsule": false,
+      "hemolysis": "Gamma",
+      "motility": true,
+      "sites": ["Gastrointestinal"],
+      "symptoms": ["Diarrhea", "Bloody diarrhea", "Abdominal cramps", "Fever"],
+      "age_weights": {
+        "Neonate": 0,
+        "Child": 1,
+        "Adult": 3,
+        "Elderly": 5,
+        "Immunocompromised": 4
+      },
+      "site_weights": {
+        "Gastrointestinal": 5
+      },
+      "symptom_weights": {
+        "Diarrhea": 3,
+        "Bloody diarrhea": 2,
+        "Abdominal cramps": 2,
+        "Fever": 1
+      },
+      "culture_media": {
+        "primary": "CCFA agar (Cycloserine Cefoxitin Fructose Agar) — yellow ground glass colonies under UV light",
+        "secondary": "CLO agar — selective chromogenic agar for C. difficile"
+      },
+      "confirmatory_tests": [
+        "GDH (Glutamate Dehydrogenase) antigen detection — screening test",
+        "Toxin A and B EIA detection",
+        "PCR for toxin genes (tcdA, tcdB) — gold standard",
+        "Cytotoxicity assay (reference method)"
+      ],
+      "antibiotics": {
+        "first_line": "Vancomycin oral / Fidaxomicin (do NOT use IV Vancomycin — must be oral to reach colon)",
+        "second_line": "Metronidazole (mild cases only) / Fecal Microbiota Transplant (recurrent cases)",
+        "resistance_warning": "STOP the offending antibiotic immediately. Avoid antidiarrheals — risk of toxic megacolon. Spores survive on surfaces for months — requires bleach disinfection, alcohol gels are INEFFECTIVE against spores."
+      },
+      "teach_me": "Clostridioides difficile ranked highly because you selected Gram positive spore forming bacilli from a gastrointestinal infection in a [age_group] patient with [symptoms]. C. diff is the most common hospital acquired infection globally — it occurs when antibiotics disrupt the normal gut flora, allowing C. diff spores to germinate and produce toxins that destroy the colonic mucosa.",
+      "clinical_pearl": "Always ask about recent antibiotic use — C. diff rarely occurs without prior antibiotic exposure. The spores can survive on hospital surfaces for months and are resistant to alcohol hand sanitizer — only soap and water removes them.",
+      "gram_appearance": "Gram positive large rods with subterminal spores giving a tennis racket appearance — spores appear as clear oval bulges within the rod."
+    },
+    {
+      "id": 25,
+      "name": "Helicobacter pylori",
+      "gram": "Gram Negative",
+      "shape": "Bacilli",
+      "arrangement": "Single",
+      "oxygen": "Microaerophilic",
+      "spore": false,
+      "capsule": false,
+      "hemolysis": "Gamma",
+      "motility": true,
+      "sites": ["Gastrointestinal"],
+      "symptoms": ["Abdominal cramps", "Nausea / Vomiting", "Fever", "Fatigue / Malaise"],
+      "age_weights": {
+        "Neonate": 0,
+        "Child": 2,
+        "Adult": 4,
+        "Elderly": 4,
+        "Immunocompromised": 3
+      },
+      "site_weights": {
+        "Gastrointestinal": 5
+      },
+      "symptom_weights": {
+        "Abdominal cramps": 3,
+        "Nausea / Vomiting": 2,
+        "Fever": 1,
+        "Fatigue / Malaise": 1
+      },
+      "culture_media": {
+        "primary": "Columbia blood agar (microaerophilic at 37°C) — tiny translucent colonies after 3-5 days",
+        "secondary": "Skirrow's medium — selective medium with antibiotics to suppress normal flora"
+      },
+      "confirmatory_tests": [
+        "Urease test — rapid urease test (RUT) on biopsy (turns pink within minutes)",
+        "Urea breath test (non-invasive gold standard for active infection)",
+        "Stool antigen test (non-invasive, good for post-treatment testing)",
+        "Histology of gastric biopsy"
+      ],
+      "antibiotics": {
+        "first_line": "Triple therapy: PPI + Clarithromycin + Amoxicillin for 14 days",
+        "second_line": "Quadruple therapy: PPI + Bismuth + Metronidazole + Tetracycline (clarithromycin resistance suspected)",
+        "resistance_warning": "Clarithromycin resistance now exceeds 20% in many countries — test sensitivity before using clarithromycin based regimens. Compliance with full 14 day course is critical to avoid resistance."
+      },
+      "teach_me": "Helicobacter pylori ranked highly because you selected Gram negative curved bacilli from a gastrointestinal infection in a [age_group] patient with [symptoms]. H. pylori colonizes the stomach — an environment almost nothing else can survive — by producing massive amounts of urease that converts urea to ammonia, neutralizing stomach acid around the bacteria. It is the primary cause of peptic ulcer disease and a carcinogen classified as Group 1 by WHO.",
+      "clinical_pearl": "H. pylori is a WHO Group 1 carcinogen — it causes both peptic ulcers and gastric cancer. Eradicating it does not just cure ulcers, it reduces gastric cancer risk by up to 35%.",
+      "gram_appearance": "Gram negative curved or S-shaped rods with multiple flagella — similar in appearance to Campylobacter but found in gastric biopsy specimens rather than stool."
+    },
+    {
+      "id": 26,
+      "name": "MRSA (Methicillin-Resistant Staphylococcus aureus)",
+      "gram": "Gram Positive",
+      "shape": "Cocci",
+      "arrangement": "Clusters",
+      "oxygen": "Facultative Anaerobe",
+      "spore": false,
+      "capsule": false,
+      "hemolysis": "Beta",
+      "motility": false,
+      "sites": ["Skin", "Bloodstream", "Respiratory"],
+      "symptoms": ["Fever", "Pus / Wound discharge", "Redness / Erythema", "Swelling", "Chills and rigors"],
+      "age_weights": {
+        "Neonate": 3,
+        "Child": 2,
+        "Adult": 4,
+        "Elderly": 4,
+        "Immunocompromised": 5
+      },
+      "site_weights": {
+        "Skin": 5,
+        "Bloodstream": 4,
+        "Respiratory": 3
+      },
+      "symptom_weights": {
+        "Fever": 1,
+        "Pus / Wound discharge": 3,
+        "Redness / Erythema": 2,
+        "Swelling": 2,
+        "Chills and rigors": 2
+      },
+      "culture_media": {
+        "primary": "MRSA chromogenic agar — mauve/pink colonies indicating MRSA (oxacillin resistant)",
+        "secondary": "Mannitol Salt Agar — yellow halo colonies, then confirm resistance by oxacillin disk"
+      },
+      "confirmatory_tests": [
+        "mecA gene PCR (gold standard for MRSA confirmation)",
+        "Cefoxitin disk diffusion (surrogate for oxacillin resistance)",
+        "Latex agglutination for PBP2a (penicillin binding protein 2a)",
+        "Coagulase positive (confirms S. aureus identity)"
+      ],
+      "antibiotics": {
+        "first_line": "Vancomycin IV / Linezolid",
+        "second_line": "Daptomycin / Tedizolid / Ceftaroline",
+        "resistance_warning": "All beta lactam antibiotics are ineffective — resistance mediated by mecA gene encoding altered penicillin binding protein (PBP2a). Vancomycin MIC creep is a growing concern — monitor trough levels."
+      },
+      "teach_me": "MRSA ranked highly because you selected Gram positive cocci in clusters from a [site] infection in a [age_group] patient with [symptoms]. MRSA carries the mecA gene encoding PBP2a — an altered cell wall synthesis enzyme that beta lactam antibiotics cannot bind, rendering the entire beta lactam class useless. Community MRSA (CA-MRSA) now causes infections in otherwise healthy people with no hospital exposure.",
+      "clinical_pearl": "If a skin infection fails to improve on standard beta lactam antibiotics — think MRSA immediately. The PVL toxin producing CA-MRSA strains cause necrotizing fasciitis in young healthy individuals.",
+      "gram_appearance": "Gram positive cocci in grape-like clusters — morphologically identical to MSSA. Only susceptibility testing or molecular methods reveal the methicillin resistance."
+    },
+    {
+      "id": 27,
+      "name": "Mycobacterium tuberculosis",
+      "gram": "No Gram Reaction (Acid Fast)",
+      "shape": "Bacilli",
+      "arrangement": "Single",
+      "oxygen": "Obligate Aerobe",
+      "spore": false,
+      "capsule": false,
+      "hemolysis": "Gamma",
+      "motility": false,
+      "sites": ["Respiratory", "CNS"],
+      "symptoms": ["Cough", "Hemoptysis", "Night sweats", "Weight loss", "Fever", "Fatigue / Malaise", "Neck stiffness"],
+      "age_weights": {
+        "Neonate": 2,
+        "Child": 3,
+        "Adult": 4,
+        "Elderly": 3,
+        "Immunocompromised": 6
+      },
+      "site_weights": {
+        "Respiratory": 5,
+        "CNS": 3
+      },
+      "symptom_weights": {
+        "Cough": 2,
+        "Hemoptysis": 4,
+        "Night sweats": 3,
+        "Weight loss": 3,
+        "Fever": 1,
+        "Fatigue / Malaise": 1,
+        "Neck stiffness": 2
+      },
+      "culture_media": {
+        "primary": "Lowenstein-Jensen (LJ) medium — rough cauliflower-like buff colored colonies after 6-8 weeks",
+        "secondary": "MGIT (Mycobacteria Growth Indicator Tube) — liquid culture system, detects growth in 1-3 weeks"
+      },
+      "confirmatory_tests": [
+        "Ziehl-Neelsen (ZN) stain — acid fast bacilli appear red against blue background",
+        "GeneXpert MTB/RIF (Xpert) — rapid PCR detects TB and rifampicin resistance in 2 hours",
+        "Tuberculin skin test (Mantoux) / IGRA blood test",
+        "Culture on LJ medium (gold standard but slow)"
+      ],
+      "antibiotics": {
+        "first_line": "RHEZ — Rifampicin + Isoniazid + Ethambutol + Pyrazinamide for 2 months, then Rifampicin + Isoniazid for 4 months",
+        "second_line": "Bedaquiline / Delamanid / Linezolid (MDR-TB and XDR-TB regimens)",
+        "resistance_warning": "MDR-TB (resistant to Rifampicin + Isoniazid) and XDR-TB are global crises. NEVER add a single drug to a failing regimen — always add at least two new effective drugs. Treatment non-compliance creates resistance."
+      },
+      "teach_me": "Mycobacterium tuberculosis ranked highly because you selected acid fast bacilli from a [site] infection in a [age_group] patient with [symptoms]. TB infects one quarter of the world's population — most remain latent but 10% develop active disease. The classic triad of chronic cough with hemoptysis, night sweats and weight loss in a high prevalence setting should trigger immediate investigation.",
+      "clinical_pearl": "The only common pathogen that requires 6 months of combination antibiotic therapy — the thick waxy mycolic acid cell wall is what makes it so difficult to kill and what makes it acid fast on ZN staining.",
+      "gram_appearance": "Does not stain with standard Gram stain due to high lipid content of cell wall. Requires Ziehl-Neelsen acid fast stain — appears as red beaded rods against blue background."
+    },
+    {
+      "id": 28,
+      "name": "Chlamydophila pneumoniae",
+      "gram": "No Gram Reaction (Intracellular)",
+      "shape": "Coccoid",
+      "arrangement": "Single",
+      "oxygen": "Obligate Intracellular",
+      "spore": false,
+      "capsule": false,
+      "hemolysis": "Gamma",
+      "motility": false,
+      "sites": ["Respiratory"],
+      "symptoms": ["Fever", "Cough", "Sore throat", "Fatigue / Malaise", "Headache"],
+      "age_weights": {
+        "Neonate": 0,
+        "Child": 3,
+        "Adult": 4,
+        "Elderly": 3,
+        "Immunocompromised": 3
+      },
+      "site_weights": {
+        "Respiratory": 5
+      },
+      "symptom_weights": {
+        "Fever": 1,
+        "Cough": 3,
+        "Sore throat": 2,
+        "Fatigue / Malaise": 2,
+        "Headache": 1
+      },
+      "culture_media": {
+        "primary": "HEp-2 or HeLa cell culture — obligate intracellular, cannot grow on standard bacteriological media",
+        "secondary": "HL cell line culture — alternative cell line for Chlamydophila isolation"
+      },
+      "confirmatory_tests": [
+        "PCR from respiratory specimens (most sensitive and practical)",
+        "Microimmunofluorescence (MIF) serology — IgM for acute, IgG for past infection",
+        "Complement fixation test (genus level only)",
+        "Cell culture (reference laboratories only)"
+      ],
+      "antibiotics": {
+        "first_line": "Azithromycin / Doxycycline",
+        "second_line": "Levofloxacin / Moxifloxacin",
+        "resistance_warning": "No cell wall — all beta lactam antibiotics completely ineffective. Must use antibiotics that penetrate intracellularly (macrolides, tetracyclines, fluoroquinolones)."
+      },
+      "teach_me": "Chlamydophila pneumoniae ranked highly because you selected an intracellular organism from a respiratory infection in a [age_group] patient with [symptoms]. Chlamydophila is an atypical pneumonia pathogen that cannot be grown on standard media and does not respond to beta lactams. It causes a mild prolonged respiratory illness often called walking pneumonia similar to Mycoplasma.",
+      "clinical_pearl": "An obligate intracellular parasite — it has no independent metabolism outside a host cell. This is why standard culture media cannot grow it and why beta lactams that target cell wall synthesis are completely useless.",
+      "gram_appearance": "Cannot be visualized on standard Gram stain — obligate intracellular organism with no peptidoglycan cell wall. Diagnosis relies entirely on PCR and serology."
+    },
+    {
+      "id": 29,
+      "name": "Bacteroides fragilis",
+      "gram": "Gram Negative",
+      "shape": "Bacilli",
+      "arrangement": "Single",
+      "oxygen": "Obligate Anaerobe",
+      "spore": false,
+      "capsule": true,
+      "hemolysis": "Gamma",
+      "motility": false,
+      "sites": ["Gastrointestinal", "Bloodstream", "Skin"],
+      "symptoms": ["Fever", "Abdominal cramps", "Pus / Wound discharge", "Chills and rigors", "Swelling"],
+      "age_weights": {
+        "Neonate": 1,
+        "Child": 1,
+        "Adult": 3,
+        "Elderly": 4,
+        "Immunocompromised": 4
+      },
+      "site_weights": {
+        "Gastrointestinal": 4,
+        "Bloodstream": 3,
+        "Skin": 3
+      },
+      "symptom_weights": {
+        "Fever": 1,
+        "Abdominal cramps": 3,
+        "Pus / Wound discharge": 2,
+        "Chills and rigors": 2,
+        "Swelling": 1
+      },
+      "culture_media": {
+        "primary": "Bacteroides Bile Esculin (BBE) agar — grey black colonies (esculin hydrolysis) in presence of bile",
+        "secondary": "Brucella blood agar (anaerobic) — circular grey colonies under strict anaerobic conditions"
+      },
+      "confirmatory_tests": [
+        "Bile resistance (growth in 20% bile — unique among anaerobes)",
+        "Esculin hydrolysis positive",
+        "Kanamycin and Vancomycin resistant (disk pattern)",
+        "Polysaccharide capsule detection"
+      ],
+      "antibiotics": {
+        "first_line": "Metronidazole / Piperacillin-Tazobactam",
+        "second_line": "Meropenem / Clindamycin (check sensitivity — resistance increasing)",
+        "resistance_warning": "Intrinsically resistant to many antibiotics including Vancomycin and Aminoglycosides. Metronidazole resistance emerging. Always perform anaerobic sensitivity testing for serious infections."
+      },
+      "teach_me": "Bacteroides fragilis ranked highly because you selected Gram negative anaerobic bacilli from a [site] infection in a [age_group] patient with [symptoms]. B. fragilis is the most common anaerobic pathogen in human infections — it normally lives harmlessly in the colon but causes serious infections when it escapes into the peritoneum or bloodstream following bowel perforation or surgery.",
+      "clinical_pearl": "The most antibiotic resistant of all anaerobes and the only anaerobe that grows in the presence of bile — its polysaccharide capsule is a potent virulence factor that promotes abscess formation.",
+      "gram_appearance": "Gram negative pale staining pleomorphic rods with irregular shape and sometimes vacuoles — the pale irregular staining is characteristic of Bacteroides species."
+    },
+    {
+      "id": 30,
+      "name": "Enterobacter cloacae",
+      "gram": "Gram Negative",
+      "shape": "Bacilli",
+      "arrangement": "Single",
+      "oxygen": "Facultative Anaerobe",
+      "spore": false,
+      "capsule": false,
+      "hemolysis": "Gamma",
+      "motility": true,
+      "sites": ["Urinary", "Bloodstream", "Respiratory"],
+      "symptoms": ["Fever", "Burning urination", "Chills and rigors", "Productive cough", "Shortness of breath"],
+      "age_weights": {
+        "Neonate": 3,
+        "Child": 1,
+        "Adult": 3,
+        "Elderly": 4,
+        "Immunocompromised": 5
+      },
+      "site_weights": {
+        "Urinary": 3,
+        "Bloodstream": 4,
+        "Respiratory": 3
+      },
+      "symptom_weights": {
+        "Fever": 1,
+        "Burning urination": 2,
+        "Chills and rigors": 2,
+        "Productive cough": 2,
+        "Shortness of breath": 1
+      },
+      "culture_media": {
+        "primary": "MacConkey agar — lactose fermenter producing pink mucoid colonies",
+        "secondary": "Blood agar — grey mucoid colonies, non-hemolytic"
+      },
+      "confirmatory_tests": [
+        "Voges Proskauer positive (differentiates from E. coli)",
+        "Citrate positive",
+        "Motile",
+        "Ornithine decarboxylase positive"
+      ],
+      "antibiotics": {
+        "first_line": "Meropenem / Cefepime (inducible AmpC producers — avoid 3rd gen cephalosporins)",
+        "second_line": "Ciprofloxacin / Piperacillin-Tazobactam",
+        "resistance_warning": "CRITICAL — Enterobacter has inducible AmpC beta-lactamase. Even if 3rd generation cephalosporins appear sensitive on initial testing, resistance can emerge during therapy. Always use Meropenem or Cefepime for serious infections."
+      },
+      "teach_me": "Enterobacter cloacae ranked highly because you selected Gram negative bacilli from a [site] hospital acquired infection in a [age_group] patient with [symptoms]. Enterobacter is a classic nosocomial pathogen — it rarely causes infection in healthy people but is dangerous in ICU patients on prolonged antibiotics. Its ability to rapidly develop resistance during treatment is a major clinical challenge.",
+      "clinical_pearl": "Never trust the initial sensitivity report for Enterobacter — treatment with 3rd generation cephalosporins can select for resistant mutants causing clinical failure even when the initial culture appears sensitive.",
+      "gram_appearance": "Gram negative straight rods — morphologically indistinguishable from other Enterobacteriaceae. Clinical context and biochemical testing are essential for identification."
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "total_organisms": 30,
+    "clinical_sites": ["Respiratory", "Urinary", "Gastrointestinal", "CNS", "Skin", "Bloodstream"],
+    "age_groups": ["Neonate", "Child", "Adult", "Elderly", "Immunocompromised"],
+    "references": [
+      "Jawetz Melnick and Adelbergs Medical Microbiology 28th Edition",
+      "Murrays Manual of Clinical Microbiology 12th Edition",
+      "CLSI Guidelines for Antimicrobial Susceptibility Testing",
+      "EUCAST Clinical Breakpoints",
+      "WHO Priority Pathogens List 2024"
+    ],
+    "disclaimer": "For educational and decision support purposes only. Laboratory confirmation and clinical judgment are always required. Not a substitute for professional medical advice."
+  }
+}
