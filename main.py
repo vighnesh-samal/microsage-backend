@@ -13,7 +13,7 @@ import json, os, smtplib
 from datetime import datetime
 from email.mime.text import MIMEText
 
-GMAIL_USER = "vighnesh7samal@gmail.com"
+GMAIL_USER = "vighneshsamal@gmail.com"
 GMAIL_PASS = "tlnj elck tpxq copx"
 
 def send_feedback_email(rating, comment):
