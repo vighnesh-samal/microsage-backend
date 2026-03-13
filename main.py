@@ -9,8 +9,24 @@ from scorer import (
     score_organisms, get_symptoms_for_site,
     fill_teach_me, calculate_confidence, ORGANISMS
 )
-import json, os
+import json, os, smtplib
 from datetime import datetime
+from email.mime.text import MIMEText
+
+GMAIL_USER = "vighnesh7samal@gmail.com"
+GMAIL_PASS = "tlnj elck tpxq copx"
+
+def send_feedback_email(rating, comment):
+    try:
+        msg = MIMEText(f"New MicroSage Feedback\n\nRating: {rating}/5\n\nComment:\n{comment or 'No comment left.'}")
+        msg["Subject"] = f"⭐ MicroSage Feedback — {rating}/5"
+        msg["From"] = GMAIL_USER
+        msg["To"] = GMAIL_USER
+        with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
+            smtp.login(GMAIL_USER, GMAIL_PASS)
+            smtp.send_message(msg)
+    except Exception as e:
+        print(f"Email error: {e}")
 
 # In-memory feedback store
 feedback_store = []
@@ -214,6 +230,7 @@ def submit_feedback(request: FeedbackRequest):
         "timestamp": datetime.utcnow().isoformat()
     }
     feedback_store.append(entry)
+    send_feedback_email(request.rating, request.comment)
     return {"message": "Thank you for your feedback!", "id": entry["id"]}
 
 @app.get("/feedback")
