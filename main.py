@@ -12,17 +12,8 @@ from scorer import (
 import json, os
 from datetime import datetime
 
-FEEDBACK_FILE = "feedback.json"
-
-def load_feedback():
-    if not os.path.exists(FEEDBACK_FILE):
-        return []
-    with open(FEEDBACK_FILE, "r") as f:
-        return json.load(f)
-
-def save_feedback(data):
-    with open(FEEDBACK_FILE, "w") as f:
-        json.dump(data, f, indent=2)
+# In-memory feedback store
+feedback_store = []
 
 # ─────────────────────────────────────────────
 # APP SETUP
@@ -216,22 +207,18 @@ def analyze(request: AnalyzeRequest):
 
 @app.post("/feedback")
 def submit_feedback(request: FeedbackRequest):
-    feedbacks = load_feedback()
     entry = {
-        "id": len(feedbacks) + 1,
+        "id": len(feedback_store) + 1,
         "rating": request.rating,
         "comment": request.comment,
         "timestamp": datetime.utcnow().isoformat()
     }
-    feedbacks.append(entry)
-    save_feedback(feedbacks)
+    feedback_store.append(entry)
     return {"message": "Thank you for your feedback!", "id": entry["id"]}
 
 @app.get("/feedback")
 def get_feedback(sort: str = "desc"):
-    feedbacks = load_feedback()
-    reverse = sort != "asc"
-    feedbacks.sort(key=lambda x: x["rating"], reverse=reverse)
+    feedbacks = sorted(feedback_store, key=lambda x: x["rating"], reverse=(sort != "asc"))
     return {
         "total": len(feedbacks),
         "average_rating": round(sum(f["rating"] for f in feedbacks) / len(feedbacks), 1) if feedbacks else 0,
