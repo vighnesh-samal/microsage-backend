@@ -2,12 +2,27 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from models import (
     AnalyzeRequest, AnalyzeResponse, OrganismResult,
-    CultureMedia, Antibiotics, SymptomsResponse, HealthResponse
+    CultureMedia, Antibiotics, SymptomsResponse, HealthResponse,
+    FeedbackRequest
 )
 from scorer import (
     score_organisms, get_symptoms_for_site,
     fill_teach_me, calculate_confidence, ORGANISMS
 )
+import json, os
+from datetime import datetime
+
+FEEDBACK_FILE = "feedback.json"
+
+def load_feedback():
+    if not os.path.exists(FEEDBACK_FILE):
+        return []
+    with open(FEEDBACK_FILE, "r") as f:
+        return json.load(f)
+
+def save_feedback(data):
+    with open(FEEDBACK_FILE, "w") as f:
+        json.dump(data, f, indent=2)
 
 # ─────────────────────────────────────────────
 # APP SETUP
@@ -194,3 +209,31 @@ def analyze(request: AnalyzeRequest):
         inputs_provided=inputs_provided,
         analysis_note=analysis_note
     )
+
+# ─────────────────────────────────────────────
+# FEEDBACK ENDPOINTS
+# ─────────────────────────────────────────────
+
+@app.post("/feedback")
+def submit_feedback(request: FeedbackRequest):
+    feedbacks = load_feedback()
+    entry = {
+        "id": len(feedbacks) + 1,
+        "rating": request.rating,
+        "comment": request.comment,
+        "timestamp": datetime.utcnow().isoformat()
+    }
+    feedbacks.append(entry)
+    save_feedback(feedbacks)
+    return {"message": "Thank you for your feedback!", "id": entry["id"]}
+
+@app.get("/feedback")
+def get_feedback(sort: str = "desc"):
+    feedbacks = load_feedback()
+    reverse = sort != "asc"
+    feedbacks.sort(key=lambda x: x["rating"], reverse=reverse)
+    return {
+        "total": len(feedbacks),
+        "average_rating": round(sum(f["rating"] for f in feedbacks) / len(feedbacks), 1) if feedbacks else 0,
+        "feedbacks": feedbacks
+    }

@@ -70,3 +70,8 @@ class HealthResponse(BaseModel):
     status: str
     version: str
     total_organisms: int
+
+
+class FeedbackRequest(BaseModel):
+    rating: float   # 1.0 to 5.0 in 0.5 steps
+    comment: str = ""
