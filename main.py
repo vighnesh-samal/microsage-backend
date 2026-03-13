@@ -9,7 +9,7 @@ from scorer import (
     score_organisms, get_symptoms_for_site,
     fill_teach_me, calculate_confidence, ORGANISMS
 )
-import json, os, smtplib
+import json, os, smtplib, threading
 from datetime import datetime
 from email.mime.text import MIMEText
 
@@ -230,7 +230,7 @@ def submit_feedback(request: FeedbackRequest):
         "timestamp": datetime.utcnow().isoformat()
     }
     feedback_store.append(entry)
-    send_feedback_email(request.rating, request.comment)
+    threading.Thread(target=send_feedback_email, args=(request.rating, request.comment), daemon=True).start()
     return {"message": "Thank you for your feedback!", "id": entry["id"]}
 
 @app.get("/feedback")
