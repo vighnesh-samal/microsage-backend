@@ -12,8 +12,8 @@ from scorer import (
 import json, os
 from datetime import datetime
 
-TELEGRAM_TOKEN = "8746752221:AAGfTtbGtHlJw3BAB1OUleWopWYoZWgb0Do"
-TELEGRAM_CHAT_ID = "6208228497"
+TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN", "")
+TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
 
 def send_feedback_email(rating, comment):
     try:
