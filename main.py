@@ -9,24 +9,22 @@ from scorer import (
     score_organisms, get_symptoms_for_site,
     fill_teach_me, calculate_confidence, ORGANISMS
 )
-import json, os, smtplib
+import json, os
 from datetime import datetime
-from email.mime.text import MIMEText
 
-GMAIL_USER = "vighneshsamal@gmail.com"
-GMAIL_PASS = "whei lmsv vsvo yskx"
+TELEGRAM_TOKEN = "8746752221:AAGfTtbGtHlJw3BAB1OUleWopWYoZWgb0Do"
+TELEGRAM_CHAT_ID = "6208228497"
 
 def send_feedback_email(rating, comment):
     try:
-        msg = MIMEText(f"New MicroSage Feedback\n\nRating: {rating}/5\n\nComment:\n{comment or 'No comment left.'}")
-        msg["Subject"] = f"⭐ MicroSage Feedback — {rating}/5"
-        msg["From"] = GMAIL_USER
-        msg["To"] = GMAIL_USER
-        with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
-            smtp.login(GMAIL_USER, GMAIL_PASS)
-            smtp.send_message(msg)
+        import urllib.request
+        text = f"⭐ MicroSage Feedback\n\nRating: {rating}/5\n\nComment:\n{comment or 'No comment left.'}"
+        url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
+        data = json.dumps({"chat_id": TELEGRAM_CHAT_ID, "text": text}).encode()
+        req = urllib.request.Request(url, data=data, headers={"Content-Type": "application/json"})
+        urllib.request.urlopen(req)
     except Exception as e:
-        print(f"Email error: {e}")
+        print(f"Telegram error: {e}")
 
 # In-memory feedback store
 feedback_store = []
